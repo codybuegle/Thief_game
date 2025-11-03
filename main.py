@@ -12,7 +12,8 @@ from telegram.ext import (
 )
 
 # ----- CONFIG -----
-BOT_TOKEN = "7179236337:AAE71YPu927RpaAk3t_vyBmd1V_vRqIk0fE"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 MIN_PLAYERS = 4
 MAX_PLAYERS = 8
 MAX_TURNS = 10
